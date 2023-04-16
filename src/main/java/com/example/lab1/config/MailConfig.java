@@ -27,8 +27,8 @@ public class MailConfig {
     public JavaMailSender getMailSenderYandex(){
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
         mailSender.setHost("smtp.yandex.ru");
-        mailSender.setUsername("ymnyaga309@yandex.ru");
-        mailSender.setPassword("persikmoikot");
+        mailSender.setUsername(""); // тут логин твоей почты на яндексе
+        mailSender.setPassword(""); //пароль от нее
         mailSender.setPort(465);
 
         Properties properties = mailSender.getJavaMailProperties();
@@ -42,8 +42,8 @@ public class MailConfig {
     public JavaMailSender getMailSenderGmail(){
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
         mailSender.setHost("smtp.gmail.com");
-        mailSender.setUsername("ymnyaga309@gmail.com");
-        mailSender.setPassword("Persikmoikot19991023");
+        mailSender.setUsername(""); // логин от почты google
+        mailSender.setPassword(""); //пароль от нее
         mailSender.setPort(465);
 
         Properties properties = mailSender.getJavaMailProperties();
